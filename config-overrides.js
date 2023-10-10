@@ -6,7 +6,8 @@ module.exports = function override(config,env){
 		"@pages": path.resolve(__dirname,"src/pages"),
 		"@components":path.resolve(__dirname,"src/components"),
 		"@styles":path.resolve(__dirname,"src/styles"),
-		"@assets":path.resolve(__dirname,"src/assets")
+		"@assets":path.resolve(__dirname,"src/assets"),
+		"@dummyData":path.resolve(__dirname,"src/dummyData")
 	})(config,env)
 	return config
 }

@@ -1,9 +1,11 @@
 import Layout from "@components/Layout/Layout.jsx";
 
 const CartPage = () => {
-  <>
-    <Layout></Layout>
-  </>;
+  return (
+    <>
+      <Layout></Layout>
+    </>
+  );
 };
 
 export default CartPage;

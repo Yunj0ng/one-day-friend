@@ -1,0 +1,56 @@
+@import "@styles/_global.scss";
+
+.info {
+	position:relative;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  h1,
+  h4 {
+    color: var(--basic-blue);
+		margin: 10px 0;
+
+		& ~ div {
+			color: var(--basic-black)
+		}
+  }
+
+  @include pc {
+		width: 90%;
+    margin-left: 50px;
+  }
+
+  .sub {
+    display: flex;
+    margin: 20px 0;
+    .sub2 {
+      display: flex;
+      margin-right: 30px;
+
+			& ~ span {
+				color: var(--basic-black)
+			}
+
+      & img {
+        width: 20px;
+        height: 20px;
+        overflow: visible;
+        margin-right: 5px;
+      }
+    }
+  }
+
+	button {
+		position: absolute;
+		bottom: -20%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px;
+		height: 30px;
+		border-radius: 10px;
+		background-color: var(--basic-blue);
+		color: var(--basic-white);
+	}
+  
+}

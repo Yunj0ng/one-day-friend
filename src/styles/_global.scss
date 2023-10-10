@@ -33,12 +33,11 @@
 
 %slide-btn-style {
   position: absolute;
-  width: auto;
+  width:20px;
+  height: 40px;
   top: 50%;
-  color: var(--basic-gray);
-  font-weight: bold;
-  font-size: 50px;
-  user-select: none;
+  transform: translateY(50%);
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -49,6 +48,7 @@
 
 %searchbar {
   width: 70%;
+  height:30px;
   border: 1px solid var(--basic-gray);
   border-radius: 5px 0 0 5px;
   padding: 0 5px;
@@ -56,6 +56,7 @@
 
 %searchbar-btn {
   width: 15%;
+  height:30px;
   border-radius: 0 5px 5px 0;
   background-color: var(--basic-blue);
 }

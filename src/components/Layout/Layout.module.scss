@@ -61,6 +61,11 @@ header {
           border: none;
           background-color: var(--basic-white);
         }
+
+        & img {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -148,6 +153,7 @@ header {
         opacity: 0;
 				padding-left: 10%;
 				font-weight: 700;
+        cursor: pointer;
 
         & img {
           display: none;
@@ -161,6 +167,7 @@ header {
 					align-items: center;
 					width:80px;
           margin-left: 5px;
+          cursor: pointer;
         }
 
         &:nth-child(3) {
@@ -189,8 +196,6 @@ header {
 
 /* Footer */
 footer {
-  position: fixed;
-	bottom: 0;
 	width: 100%;
 	max-width: 1280px;
   height: 100px;
@@ -230,6 +235,6 @@ footer {
   }
 }
 
-.content{
-flex:1
-}
+// .content{
+// flex:1
+// }

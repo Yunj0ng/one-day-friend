@@ -1,0 +1,33 @@
+@import "@styles/_global.scss";
+
+.container {
+  @extend %section;
+  position: relative;
+	margin-top:100px;
+
+  .wrapper {
+    @extend %wrapper;
+    &::before {
+      @extend %wrapper-frame;
+    }
+    .title {
+      @extend %title;
+      @include pc {
+        font-size: 20px;
+      }
+    }
+    .list {
+      @extend %render-list;
+    }
+  }
+
+	.moreBtn {
+  text-align: center;
+  margin-top: 16px;
+  & p {
+    color: var(--basic-blue);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+}

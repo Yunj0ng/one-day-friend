@@ -1,0 +1,25 @@
+@import "@styles/_global.scss";
+
+.section {
+	@extend %section;
+}
+.wrapper {
+	@extend %wrapper;
+	margin: 100px auto;
+}
+
+// showPage
+.avatar {
+	width: 300px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+// detailPage
+.wrapper{
+
+	@include pc {
+		display: flex;
+	}
+	
+}
