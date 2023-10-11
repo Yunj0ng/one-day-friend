@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "@components/Card/Card.jsx";
 
 const CardContainer = ({ member, style, onClick }) => {
+
   // 篩選7.3以上的member 並依rating高低排序
   const top = member
     .filter((m) => Number(m.rating > 7.3))
@@ -13,7 +14,7 @@ const CardContainer = ({ member, style, onClick }) => {
         <div className={styles.wrapper}>
           {style === "rating" && (
             <>
-              <div id="rankingList" className={styles.title}>
+              <div id="ranking-list" className={styles.title}>
                 人氣朋友
               </div>
               <div className={styles.list}>
@@ -26,7 +27,7 @@ const CardContainer = ({ member, style, onClick }) => {
                     location={m.location}
                     rating={m.rating}
                     style={style}
-                    onClick={(id) => onClick(id)}
+                    onClick={(id) => onClick?.(id)}
                   />
                 ))}
               </div>
@@ -35,7 +36,7 @@ const CardContainer = ({ member, style, onClick }) => {
           {style === "normal" && (
             <>
               <div className={styles.title}>找朋友</div>
-              <div id="FriendList" className={styles.list}>
+              <div id="friend-list" className={styles.list}>
                 {member.map((m) => (
                   <Card
                     key={m.id}
@@ -43,7 +44,7 @@ const CardContainer = ({ member, style, onClick }) => {
                     name={m.name}
                     img={m.image}
                     location={m.location}
-                    onClick={(id) => onClick(id)}
+                    onClick={(id) => onClick?.(id)}
                   />
                 ))}
               </div>
@@ -56,7 +57,8 @@ const CardContainer = ({ member, style, onClick }) => {
           )}
           {style === "show" && (
             <>
-              <div id="FriendList" className={styles.list}>
+              <h2 className={styles.showTitle}>朋友們</h2>
+              <div id="FriendList" className={styles.showList}>
                 {member.map((m) => (
                   <Card
                     key={m.id}
@@ -64,7 +66,7 @@ const CardContainer = ({ member, style, onClick }) => {
                     name={m.name}
                     img={m.image}
                     location={m.location}
-                    onClick={(id) => onClick(id)}
+                    onClick={(id) => onClick?.(id)}
                   />
                 ))}
               </div>

@@ -1,4 +1,4 @@
-import styles from "./InfoBlock.module.scss"
+import styles from "./InfoItem.module.scss"
 
 const InfoItem = ({title, link})=>{
 	return (
@@ -13,7 +13,7 @@ const InfoItem = ({title, link})=>{
             <a href="{link}">{title}</a>
           </div>
           <div className={styles.infoBtn}>
-            <a href="{link}">查看</a>
+            <a href={link}>查看</a>
           </div>
         </div>
       )}

@@ -1,17 +1,19 @@
-import styles from "./AvatarInfo.module.scss"
-import { useNavigate, useParams } from "react-router-dom";
+import styles from "./AvatarInfo.module.scss";
+import { useParams } from "react-router-dom";
 import locationIcon from "@assets/icons/location.svg";
 import starIcon from "@assets/icons/star.svg";
 
-const AvatarInfo=({name, location, rating, hobby, description})=>{
-	const navigate = useNavigate()
-	const {id} = useParams()
+const AvatarInfo = ({
+  name,
+  location,
+  rating,
+  hobby,
+  description,
+  onClick,
+}) => {
+  const { id } = useParams();
 
-	const handleBtnClick =(id)=>{
-	  localStorage.setItem("id:", id)
-		navigate("/cart")
-	}
-	return (
+  return (
     <div className={styles.info}>
       <h1>{name}</h1>
       <div className={styles.sub}>
@@ -28,9 +30,9 @@ const AvatarInfo=({name, location, rating, hobby, description})=>{
       <div>{hobby}</div>
       <h4>想說的話: </h4>
       <div>{description}</div>
-      <button onClick={()=>handleBtnClick(id)}>申請交友</button>
+      <button onClick={() => onClick?.(id)}>申請交友</button>
     </div>
   );
-}
+};
 
-export default AvatarInfo
+export default AvatarInfo;

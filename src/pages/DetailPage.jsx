@@ -1,26 +1,29 @@
 import styles from "@styles/page.module.scss";
-import { useParams } from "react-router-dom";
 import Layout from "@components/Layout/Layout.jsx";
 import AvatarInfo from "@components/AvatarInfo/AvatarInfo.jsx"
+import { useSletedContext } from "@context/SeletedContext";
 
-
-import dummyMember from "@dummyData/member.js";
 
 const DetailPage = () => {
-  const { id } = useParams();
-  const memberData = dummyMember.find((m) => m.id === Number(id));
+  const { seletedMemberData, handleToCartClick } = useSletedContext();
+  const {name, image, location, rating, hobby, description} = seletedMemberData
   return (
     <Layout>
       <div className={styles.section}>
         <div className={styles.wrapper}>
-          <img src={memberData.image} alt="avatar" className={styles.avatar} />
+          <img
+            src={image}
+            alt="avatar"
+            className={styles.avatar}
+          />
           <div className={styles.info}>
             <AvatarInfo
-              name={memberData.name}
-              location={memberData.location}
-              rating={memberData.rating}
-              hobby={memberData.hobby}
-              description={memberData.description}
+              name={name}
+              location={location}
+              rating={rating}
+              hobby={hobby}
+              description={description}
+              onClick={handleToCartClick}
             />
           </div>
         </div>

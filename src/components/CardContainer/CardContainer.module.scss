@@ -3,7 +3,7 @@
 .container {
   @extend %section;
   position: relative;
-	margin-top:100px;
+  margin-top: 100px;
 
   .wrapper {
     @extend %wrapper;
@@ -16,18 +16,34 @@
         font-size: 20px;
       }
     }
+    .showTitle {
+      @extend %title;
+    }
     .list {
       @extend %render-list;
+
+      @include pc {
+        height: 630px;
+      }
+    }
+
+    .showList {
+      @extend %render-list;
+      height: 100%;
+
+      @include pc {
+        height: 630px;
+      }
     }
   }
 
-	.moreBtn {
-  text-align: center;
-  margin-top: 16px;
-  & p {
-    color: var(--basic-blue);
-    font-size: 14px;
-    font-weight: bold;
+  .moreBtn {
+    text-align: center;
+    margin-top: 16px;
+    & p {
+      color: var(--basic-blue);
+      font-size: 14px;
+      font-weight: bold;
+    }
   }
-}
 }

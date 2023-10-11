@@ -27,30 +27,30 @@ const Layout = ({children}) => {
   return (
     <div className={styles.container}>
       <header>
-        <div class={styles.logoBlock}>
-          <div class={styles.hdLogo}>
+        <div className={styles.logoBlock}>
+          <div className={styles.hdLogo}>
             <p>一日朋友</p>
           </div>
-          <div class={styles.hdSearch}>
+          <div className={styles.hdSearch}>
             <input
               type="text"
-              class={styles.search}
+              className={styles.search}
               placeholder="請輸入關鍵字"
             />
-            <button type="submit" class={styles.searchBtn}>
+            <button type="submit" className={styles.searchBtn}>
               <img src={searchIcon} alt="search-icon" />
             </button>
           </div>
         </div>
-        <div class={styles.cart}>
+        <div className={styles.cart}>
           <NavItem path="/cart" icon={cartFullIcon} text="" />
         </div>
-        <label for="toggle" class={styles.toggleLabel}>
+        <label htmlFor="toggle" className={styles.toggleLabel}>
           <img src={barsIcon} alt="bars-icon" />
         </label>
-        <input type="checkbox" class={styles.toggle} id="toggle" />
-        <div class={styles.hdNav}>
-          <div class={styles.hdNavItems}>
+        <input type="checkbox" className={styles.toggle} id="toggle" />
+        <div className={styles.hdNav}>
+          <div className={styles.hdNavItems}>
             <NavItem path="/home" icon={homeIcon} text="首頁" />
             <NavItem path="/show" icon={showIcon} text="朋友們" />
             <NavItem path="/cart" icon={cartIcon} text="交友申請單" />
@@ -60,8 +60,8 @@ const Layout = ({children}) => {
       </header>
       <div className={styles.content}>{children}</div>
       <footer>
-        <p class={styles.footerLogo}>一日朋友</p>
-        <ul class={styles.footerPolicy}>
+        <p className={styles.footerLogo}>一日朋友</p>
+        <ul className={styles.footerPolicy}>
           <Policy path="*" text="網站使用條款" />
           <Policy path="*" text="隱私權政策" />
           <Policy path="*" text="網路購物條款" />

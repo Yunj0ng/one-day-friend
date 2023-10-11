@@ -17,8 +17,8 @@ const GlobalNav = () => {
       <div className={styles.globalNav}>
         <div className={styles.menuItem}>
           <NavItem block="info" text="公告" />
-          <NavItem block="rankingList" text="人氣朋友" />
-          <NavItem block="FriendList" text="找朋友" />
+          <NavItem block="ranking-list" text="人氣朋友" />
+          <NavItem block="friend-list" text="找朋友" />
         </div>
         <div className={styles.snsList}>
           <SnsContainer style="global"/>

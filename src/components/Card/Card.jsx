@@ -3,7 +3,7 @@ import faceIcon from "@assets/icons/face.svg";
 
 const Card = ({ id, name, img, location,rating, style, onClick }) => {
   return (
-    <div className={styles.card} onClick={()=>{onClick(id)}}>
+    <div className={styles.card} onClick={()=>{onClick?.(id)}}>
       {style === "rating" ? (
         <>
 			    <div className={styles.showRating}>
