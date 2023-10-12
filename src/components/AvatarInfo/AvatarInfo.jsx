@@ -2,6 +2,8 @@ import styles from "./AvatarInfo.module.scss";
 import { useParams } from "react-router-dom";
 import locationIcon from "@assets/icons/location.svg";
 import starIcon from "@assets/icons/star.svg";
+import dolarIcon from "@assets/icons/dolar.svg"
+import { useSettingContext } from "@context/SettingContext";
 
 const AvatarInfo = ({
   name,
@@ -12,6 +14,7 @@ const AvatarInfo = ({
   onClick,
 }) => {
   const { id } = useParams();
+  const { basicFee } = useSettingContext();
 
   return (
     <div className={styles.info}>
@@ -24,6 +27,10 @@ const AvatarInfo = ({
         <div className={styles.sub2}>
           <img src={starIcon} alt="icon" />
           <span>{rating}</span>
+        </div>
+        <div className={styles.sub2}>
+          <img src={dolarIcon} alt="icon" />
+          <span>{basicFee} /hr</span>
         </div>
       </div>
       <h4>興趣:</h4>
