@@ -2,8 +2,8 @@
 
 .info {
 	position:relative;
-  width: 60%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 0 auto 120px;
   padding-top: 30px;
 
   h1,
@@ -24,9 +24,10 @@
   .sub {
     display: flex;
     margin: 20px 0;
+
     .sub2 {
       display: flex;
-      margin-right: 30px;
+      margin-right: 10px;
 
 			& ~ span {
 				color: var(--basic-black)

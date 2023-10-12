@@ -1,7 +1,8 @@
 @import "@styles/_global.scss";
 
 .section {
-	@extend %section;
+	width:100%;
+	height: 100%;
 }
 .wrapper {
 	@extend %wrapper;
@@ -21,5 +22,14 @@
 	@include pc {
 		display: flex;
 	}
-	
+}
+
+// faqPage
+h1 {
+	margin: 100px;
+	color: var(--basic-blue);
+}
+
+.faqContent {
+	margin-bottom: 100%;
 }

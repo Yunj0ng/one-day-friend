@@ -39,12 +39,13 @@
 
   .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 80px 0 50px;
 
     & img {
       width: 50%;
       height: 150px;
+      object-fit: contain;
 
       @include pc {
         width: 40%;
