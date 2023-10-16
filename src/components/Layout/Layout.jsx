@@ -51,7 +51,7 @@ const Layout = ({children}) => {
         <input type="checkbox" className={styles.toggle} id="toggle" />
         <div className={styles.hdNav}>
           <div className={styles.hdNavItems}>
-            <NavItem path="/home" icon={homeIcon} text="首頁" />
+            <NavItem path="/" icon={homeIcon} text="首頁" />
             <NavItem path="/show" icon={showIcon} text="朋友們" />
             <NavItem path="/cart" icon={cartIcon} text="交友申請單" />
             <NavItem path="/faq" icon={faqIcon} text="FAQ" />

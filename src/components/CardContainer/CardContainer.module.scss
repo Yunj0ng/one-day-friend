@@ -40,10 +40,18 @@
   .moreBtn {
     text-align: center;
     margin-top: 16px;
+
     & p {
       color: var(--basic-blue);
       font-size: 14px;
       font-weight: bold;
+      &:hover {
+        opacity: 0.7;
+      }
+
+      @include pc {
+        font-size: 20px;
+      }
     }
   }
 }

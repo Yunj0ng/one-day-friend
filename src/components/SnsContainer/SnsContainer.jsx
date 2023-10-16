@@ -6,7 +6,7 @@ import lineIcon from "@assets/icons/line.svg";
 
 const SnsItem = ({ sns, img }) => {
   return (
-    <div className={styles[sns]}>
+    <div className={styles.media}>
       <a href="#">
         <img src={img} alt={sns} />
       </a>
