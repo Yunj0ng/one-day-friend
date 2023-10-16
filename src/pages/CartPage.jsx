@@ -9,7 +9,7 @@ import { useSettingContext } from "@context/SettingContext";
 import { useOderContext } from "@context/OderContext";
 import Swal from "sweetalert2";
 import Loading from "@components/Loading/Loading.jsx";
-import {useLoadingContext} from "@context/LoadingContext.jsx"
+import { useLoadingContext } from "@context/LoadingContext.jsx";
 
 const CartPage = () => {
   const { seletedMemberData } = useSletedContext();
@@ -17,7 +17,7 @@ const CartPage = () => {
     useUserContext();
   const { basicFee } = useSettingContext();
   const { totalFee, seletedHours } = useOderContext();
-  const {isLoading} = useLoadingContext()
+  const { isLoading } = useLoadingContext();
 
   // 提交測試
   const handleSubmit = () => {
@@ -27,6 +27,19 @@ const CartPage = () => {
         Object.values(obj).every((value) => value === "") ||
         Object.values(obj).some((value) => value === "")
       );
+    }
+    if (!seletedMemberData) {
+      Swal.fire({
+        position: "top",
+        title: "請選擇朋友",
+        color: "#868faf",
+        background: "#faf9f5",
+        width: 394,
+        timer: 1000,
+        icon: "error",
+        showConfirmButton: false,
+      });
+      return;
     }
     if (isEmpty(userInfo) || isEmpty(cardInfo)) {
       Swal.fire({

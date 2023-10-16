@@ -2,7 +2,11 @@ import styles from "./Cart.module.scss"
 import heartIcon from "@assets/icons/bounce-heart.svg"
 
 const Cart =({title, member})=>{
-	const {name, image} = member
+	if (!member) {
+		return <div className={styles.noMemberSeleted}>尚未選擇朋友</div>
+	}
+
+	const { name, image } = member;
 	return (
 		<div className={styles.cart}>
 			<h2 className={styles.title}>{title}</h2>
