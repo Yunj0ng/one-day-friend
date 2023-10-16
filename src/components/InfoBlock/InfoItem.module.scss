@@ -6,12 +6,9 @@
   flex-direction: column;
   max-width: 500px;
   text-align: center;
-
   @include pc {
     background-color: var(--basic-white);
     box-shadow: none;
-    &:hover {
-    }
   }
 
   .title {
@@ -26,6 +23,7 @@
       font-size: 1.2rem;
     }
   }
+
   .infoItem {
     @extend %info-boxshadow;
     display: flex;
@@ -42,6 +40,7 @@
       box-shadow: none;
       border-top: 3px solid var(--light-gray);
     }
+
     .infoTitle a {
       color: var(--dark-gray);
       font-size: 0.9rem;

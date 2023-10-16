@@ -1,12 +1,10 @@
-import styles from "./InfoItem.module.scss"
+import styles from "./InfoItem.module.scss";
 
-const InfoItem = ({title, link})=>{
-	return (
+const InfoItem = ({ title, link }) => {
+  return (
     <div id="info" className={styles.wrapper}>
       {title === "最新公告" ? (
-        <div className={styles.title}>
-          {title}
-        </div>
+        <div className={styles.title}>{title}</div>
       ) : (
         <div className={styles.infoItem}>
           <div className={styles.infoTitle}>
@@ -19,6 +17,6 @@ const InfoItem = ({title, link})=>{
       )}
     </div>
   );
-}
+};
 
-export default InfoItem
+export default InfoItem;

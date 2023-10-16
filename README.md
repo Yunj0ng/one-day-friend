@@ -27,7 +27,7 @@ npm start
 ```
 
 5. 打開瀏覽器進入以下網址:\
-[http://localhost:3000](http://localhost:3000)
+   [http://localhost:3000](http://localhost:3000)
 
 6. 要暫停使用，請在終端機輸入:
 

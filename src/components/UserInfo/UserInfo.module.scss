@@ -1,9 +1,9 @@
 @import "@styles/_global.scss";
 
 %center {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper,
@@ -11,21 +11,21 @@
 .paymentInfo,
 .userInfo div,
 .paymentInfo div {
-	@extend %center;
+  @extend %center;
 }
 
 .userInfo div,
 .paymentInfo div {
-	@include pc{
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
+  @include pc {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .wrapper {
-	margin-bottom: 50px;;
-	@include pc {
-		width: 80%;
-		margin: 0 auto 100px;
-	}
+  margin-bottom: 50px;
+  @include pc {
+    width: 80%;
+    margin: 0 auto 100px;
+  }
 }

@@ -1,23 +1,23 @@
 .wrapper {
-	position: absolute;
-	top: 50%;
-	right: 50%;
-	transform: translateX(50%) translateY(-50%);
-	z-index: 999;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  z-index: 999;
 
-	h1 span{
-		animation: blink 1s infinite
-	}
+  h1 span {
+    animation: blink 1s infinite;
+  }
 }
 
 @keyframes blink {
-	0% {
-		opacity:0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

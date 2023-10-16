@@ -23,7 +23,9 @@ const SearchPage = () => {
               {searchResults.length === 0 ? (
                 <div className={styles.content}>
                   <h3>無相符的資料</h3>
-									<Link to="/" className={styles.backToHome}>返回首頁</Link>
+                  <Link to="/" className={styles.backToHome}>
+                    返回首頁
+                  </Link>
                 </div>
               ) : (
                 <CardContainer

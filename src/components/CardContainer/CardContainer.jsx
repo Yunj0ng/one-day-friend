@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Card from "@components/Card/Card.jsx";
 
 const CardContainer = ({ member, style, onClick }) => {
-
   // 篩選7.3以上的member 並依rating高低排序
   const top = member
     .filter((m) => Number(m.rating > 7.3))

@@ -2,7 +2,7 @@ import styles from "./AvatarInfo.module.scss";
 import { useParams } from "react-router-dom";
 import locationIcon from "@assets/icons/location.svg";
 import starIcon from "@assets/icons/star.svg";
-import dolarIcon from "@assets/icons/dolar.svg"
+import dolarIcon from "@assets/icons/dolar.svg";
 import { useSettingContext } from "@context/SettingContext";
 
 const AvatarInfo = ({

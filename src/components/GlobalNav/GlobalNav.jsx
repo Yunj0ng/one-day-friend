@@ -1,5 +1,5 @@
 import styles from "./GlobalNav.module.scss";
-import searchIcon from "@assets/icons/search.svg"
+import searchIcon from "@assets/icons/search.svg";
 import SnsContainer from "@components/SnsContainer/SnsContainer.jsx";
 import { useSearchContext } from "@context/SearchContext";
 
@@ -10,7 +10,6 @@ const NavItem = ({ block, text }) => {
     </div>
   );
 };
-
 
 const GlobalNav = () => {
   const { setSearched, handleSearch, handleKeyDown } = useSearchContext();

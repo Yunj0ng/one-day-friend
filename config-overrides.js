@@ -1,8 +1,8 @@
-const {alias} = require ("react-app-rewire-alias")
-const path = require("path")
+const { alias } = require("react-app-rewire-alias");
+const path = require("path");
 
-module.exports = function override(config,env){
-	alias({
+module.exports = function override(config, env) {
+  alias({
     "@pages": path.resolve(__dirname, "src/pages"),
     "@components": path.resolve(__dirname, "src/components"),
     "@styles": path.resolve(__dirname, "src/styles"),
@@ -10,5 +10,5 @@ module.exports = function override(config,env){
     "@dummyData": path.resolve(__dirname, "src/dummyData"),
     "@context": path.resolve(__dirname, "src/context"),
   })(config, env);
-	return config
-}
+  return config;
+};

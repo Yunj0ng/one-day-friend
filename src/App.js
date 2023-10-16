@@ -7,7 +7,7 @@ import {
   ShowPage,
   NotFoundPage,
   FaqPage,
-  SearchPage
+  SearchPage,
 } from "@pages/index.js";
 import { ThemeProvider } from "@mui/material/styles";
 import { SeletedContextProvider } from "@context/SeletedContext.jsx";

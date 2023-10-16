@@ -1,29 +1,28 @@
 @import "@styles/_global.scss";
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pickerWrapper {
-	display: flex;
-	flex-direction: column;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  @include pc {
+    flex-direction: row;
+    width: 500px;
+    height: 100px;
+  }
 
-	@include pc {
-		flex-direction: row;
-	  width: 500px;
-		height:100px;
-	}
-
-	.space {
-		margin: 20px;
-	}
+  .space {
+    margin: 20px;
+  }
 }
 
 .selectContainer {
-		width: 200px;
-	}
+  width: 200px;
+}

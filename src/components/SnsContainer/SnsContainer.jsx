@@ -18,22 +18,22 @@ const SnsContainer = ({ style }) => {
   return (
     <>
       {style === "global" ? (
-          <div className={styles.gSnsList}>
+        <div className={styles.gSnsList}>
+          <SnsItem img={fbIcon} sns="fb" />
+          <SnsItem img={twitterIcon} sns="twitter" />
+          <SnsItem img={insIcon} sns="instagram" />
+          <SnsItem img={lineIcon} sns="line" />
+        </div>
+      ) : (
+        <div className={styles.wrapper}>
+          <div className={styles.title}>追蹤我們</div>
+          <div className={styles.snsList}>
             <SnsItem img={fbIcon} sns="fb" />
             <SnsItem img={twitterIcon} sns="twitter" />
             <SnsItem img={insIcon} sns="instagram" />
             <SnsItem img={lineIcon} sns="line" />
           </div>
-      ) : (
-          <div className={styles.wrapper}>
-            <div className={styles.title}>追蹤我們</div>
-            <div className={styles.snsList}>
-              <SnsItem img={fbIcon} sns="fb" />
-              <SnsItem img={twitterIcon} sns="twitter" />
-              <SnsItem img={insIcon} sns="instagram" />
-              <SnsItem img={lineIcon} sns="line" />
-            </div>
-          </div>
+        </div>
       )}
     </>
   );

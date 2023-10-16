@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import dummyMember from "@dummyData/member.js";
 
 const SeletedContext = createContext();
-const useSletedContext = ()=> useContext(SeletedContext)
+const useSletedContext = () => useContext(SeletedContext);
 
 const SeletedContextProvider = ({ children }) => {
   const [seletedId, setSeletedId] = useState("");

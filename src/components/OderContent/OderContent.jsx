@@ -26,7 +26,7 @@ const OderContent = () => {
     seletedHours,
     handleDateChange,
     handleStartTimeChange,
-    handleSeletedHoursChange
+    handleSeletedHoursChange,
   } = useOderContext();
 
   const avilableTimes = generateMenuItems(startTime, endTime);

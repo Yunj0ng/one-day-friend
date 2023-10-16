@@ -1,8 +1,8 @@
-import styles from "./Loading.module.scss"
+import styles from "./Loading.module.scss";
 import LinerProgress from "@mui/material/LinearProgress";
 
-const Loading =()=>{
-	return (
+const Loading = () => {
+  return (
     <div className={styles.wrapper}>
       <h1>
         LOAD<span>ING</span>
@@ -10,6 +10,6 @@ const Loading =()=>{
       <LinerProgress />
     </div>
   );
-}
+};
 
-export default Loading
+export default Loading;

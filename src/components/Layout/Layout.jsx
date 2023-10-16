@@ -1,7 +1,7 @@
-import styles from "./Layout.module.scss"
-import {Link} from "react-router-dom"
-import searchIcon from "@assets/icons/search.svg"
-import cartFullIcon from "@assets/icons/cart-full.svg"
+import styles from "./Layout.module.scss";
+import { Link } from "react-router-dom";
+import searchIcon from "@assets/icons/search.svg";
+import cartFullIcon from "@assets/icons/cart-full.svg";
 import cartIcon from "@assets/icons/cart.svg";
 import barsIcon from "@assets/icons/bars.svg";
 import homeIcon from "@assets/icons/home.svg";
@@ -9,22 +9,22 @@ import showIcon from "@assets/icons/show.svg";
 import faqIcon from "@assets/icons/faq.svg";
 import { useSearchContext } from "@context/SearchContext";
 
-const NavItem =({path, icon, text})=>{
-	return(
-		<Link to={path} className={styles.navItem}>
-			<img src={icon} alt="icon" className={styles.itemIcon} />
-			<p>{text}</p>
-		</Link>
-	)
-}
-const Policy =({path,text})=>{
-	return (
-		<Link to={path} className={styles.policy}>
+const NavItem = ({ path, icon, text }) => {
+  return (
+    <Link to={path} className={styles.navItem}>
+      <img src={icon} alt="icon" className={styles.itemIcon} />
       <p>{text}</p>
-   </Link>
-	)
-}
-const Layout = ({children}) => {
+    </Link>
+  );
+};
+const Policy = ({ path, text }) => {
+  return (
+    <Link to={path} className={styles.policy}>
+      <p>{text}</p>
+    </Link>
+  );
+};
+const Layout = ({ children }) => {
   const { setSearched, handleSearch, handleKeyDown } = useSearchContext();
   return (
     <div className={styles.container}>
@@ -38,10 +38,14 @@ const Layout = ({children}) => {
               type="text"
               className={styles.search}
               placeholder="請輸入關鍵字"
-              onChange={e=> setSearched(e.target.value)}
+              onChange={(e) => setSearched(e.target.value)}
               onKeyDown={handleKeyDown}
             />
-            <button type="submit" className={styles.searchBtn} onClick={handleSearch}>
+            <button
+              type="submit"
+              className={styles.searchBtn}
+              onClick={handleSearch}
+            >
               <img src={searchIcon} alt="search-icon" />
             </button>
           </div>
