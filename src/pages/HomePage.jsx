@@ -27,12 +27,12 @@ const HomePage = () => {
             </div>
             <CardContainer
               member={dummyMember}
-              style="rating"
+              show="rating"
               onClick={handleMemberClick}
             />
             <CardContainer
               member={dummyMember}
-              style="normal"
+              show="normal"
               onClick={handleMemberClick}
             />
             <SnsContainer />

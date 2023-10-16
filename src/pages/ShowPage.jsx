@@ -15,7 +15,7 @@ const ShowPage = () => {
       ) : (
         <CardContainer
           member={dummyMember}
-          style="show"
+          show="show"
           onClick={handleMemberClick}
         />
       )}

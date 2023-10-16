@@ -1,7 +1,7 @@
 import styles from "./Card.module.scss";
 import faceIcon from "@assets/icons/face.svg";
 
-const Card = ({ id, name, img, location, rating, style, onClick }) => {
+const Card = ({ id, name, img, location, rating, show, onClick }) => {
   return (
     <div
       className={styles.card}
@@ -9,7 +9,7 @@ const Card = ({ id, name, img, location, rating, style, onClick }) => {
         onClick?.(id);
       }}
     >
-      {style === "rating" ? (
+      {show === "rating" ? (
         <>
           <div className={styles.showRating}>
             <img src={faceIcon} alt="icon" />

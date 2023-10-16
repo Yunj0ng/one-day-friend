@@ -22,7 +22,7 @@ const GlobalNav = () => {
           <NavItem block="friend-list" text="找朋友" />
         </div>
         <div className={styles.snsList}>
-          <SnsContainer style="global" />
+          <SnsContainer show="global" />
         </div>
         <div className={styles.gSearch}>
           <input

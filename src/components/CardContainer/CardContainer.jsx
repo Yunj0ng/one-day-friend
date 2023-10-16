@@ -2,7 +2,7 @@ import styles from "./CardContainer.module.scss";
 import { Link } from "react-router-dom";
 import Card from "@components/Card/Card.jsx";
 
-const CardContainer = ({ member, style, onClick }) => {
+const CardContainer = ({ member, show, onClick }) => {
   // 篩選7.3以上的member 並依rating高低排序
   const top = member
     .filter((m) => Number(m.rating > 7.3))
@@ -11,7 +11,7 @@ const CardContainer = ({ member, style, onClick }) => {
     <>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          {style === "rating" && (
+          {show === "rating" && (
             <>
               <div id="ranking-list" className={styles.title}>
                 人氣朋友
@@ -25,14 +25,14 @@ const CardContainer = ({ member, style, onClick }) => {
                     img={m.image}
                     location={m.location}
                     rating={m.rating}
-                    style={style}
+                    show={show}
                     onClick={(id) => onClick?.(id)}
                   />
                 ))}
               </div>
             </>
           )}
-          {style === "normal" && (
+          {show === "normal" && (
             <>
               <div className={styles.title}>找朋友</div>
               <div id="friend-list" className={styles.list}>
@@ -54,7 +54,7 @@ const CardContainer = ({ member, style, onClick }) => {
               </div>
             </>
           )}
-          {style === "show" && (
+          {show === "show" && (
             <>
               <h2 className={styles.showTitle}>朋友們</h2>
               <div id="FriendList" className={styles.showList}>

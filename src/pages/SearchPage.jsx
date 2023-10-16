@@ -30,7 +30,7 @@ const SearchPage = () => {
               ) : (
                 <CardContainer
                   member={searchResults}
-                  style="show"
+                  show="show"
                   onClick={handleMemberClick}
                 />
               )}

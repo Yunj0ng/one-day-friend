@@ -1,22 +1,39 @@
 import styles from "./Slider.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import slideImg1 from "@assets/imgs/slide1.jpg";
-import slideImg2 from "@assets/imgs/slide2.jpg";
-import slideImg3 from "@assets/imgs/slide3.jpg";
-import slideImg4 from "@assets/imgs/slide4.jpg";
 import leftIcon from "@assets/icons/caret-left.svg";
 import rightIcon from "@assets/icons/caret-right.svg";
-
-const slidesData = [
-  { path: "*", img: slideImg1 },
-  { path: "*", img: slideImg2 },
-  { path: "*", img: slideImg3 },
-  { path: "*", img: slideImg4 },
-];
+import { useSettingContext } from "@context/SettingContext";
 
 const Slider = () => {
+  const { slidesData } = useSettingContext();
   const [slideIndex, setSlideIndex] = useState(1);
+
+  // 回傳showSlides函式 當dependencis改變時回傳新的showSlides函式
+  const showSlides = useCallback(
+    (n) => {
+      // 自動播放
+      if (n === undefined) {
+        setSlideIndex((prevIndex) => {
+          if (prevIndex >= slidesData.length) {
+            return 1;
+          } else {
+            return prevIndex + 1;
+          }
+        });
+      } else {
+        // 手動播放
+        if (n > slidesData.length) {
+          setSlideIndex(1);
+        } else if (n < 1) {
+          setSlideIndex(slidesData.length);
+        } else {
+          setSlideIndex(n);
+        }
+      }
+    },
+    [slidesData.length]
+  );
 
   useEffect(() => {
     // setInterval(fnction, delay) 依指定的時間間隔內重複執行
@@ -28,29 +45,7 @@ const Slider = () => {
     return () => {
       clearInterval(timer);
     };
-  }, [slideIndex]);
-
-  function showSlides(n) {
-    // 自動播放
-    if (n === undefined) {
-      setSlideIndex((prevIndex) => {
-        if (prevIndex >= slidesData.length) {
-          return 1;
-        } else {
-          return prevIndex + 1;
-        }
-      });
-    } else {
-      // 手動播放
-      if (n > slidesData.length) {
-        setSlideIndex(1);
-      } else if (n < 1) {
-        setSlideIndex(slidesData.length);
-      } else {
-        setSlideIndex(n);
-      }
-    }
-  }
+  }, [slideIndex, showSlides]);
 
   // 點擊轉換上/下一張slide
   function plusSlides(n) {

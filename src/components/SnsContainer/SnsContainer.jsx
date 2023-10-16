@@ -7,17 +7,17 @@ import lineIcon from "@assets/icons/line.svg";
 const SnsItem = ({ sns, img }) => {
   return (
     <div className={styles.media}>
-      <a href="#">
+      <a href="https://Yunj0ng.github.io/one-day-friend">
         <img src={img} alt={sns} />
       </a>
     </div>
   );
 };
 
-const SnsContainer = ({ style }) => {
+const SnsContainer = ({ show }) => {
   return (
     <>
-      {style === "global" ? (
+      {show === "global" ? (
         <div className={styles.gSnsList}>
           <SnsItem img={fbIcon} sns="fb" />
           <SnsItem img={twitterIcon} sns="twitter" />
