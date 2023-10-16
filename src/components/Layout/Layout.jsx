@@ -7,6 +7,7 @@ import barsIcon from "@assets/icons/bars.svg";
 import homeIcon from "@assets/icons/home.svg";
 import showIcon from "@assets/icons/show.svg";
 import faqIcon from "@assets/icons/faq.svg";
+import { useSearchContext } from "@context/SearchContext";
 
 const NavItem =({path, icon, text})=>{
 	return(
@@ -24,6 +25,7 @@ const Policy =({path,text})=>{
 	)
 }
 const Layout = ({children}) => {
+  const { setSearched, handleSearch, handleKeyDown } = useSearchContext();
   return (
     <div className={styles.container}>
       <header>
@@ -36,8 +38,10 @@ const Layout = ({children}) => {
               type="text"
               className={styles.search}
               placeholder="請輸入關鍵字"
+              onChange={e=> setSearched(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
-            <button type="submit" className={styles.searchBtn}>
+            <button type="submit" className={styles.searchBtn} onClick={handleSearch}>
               <img src={searchIcon} alt="search-icon" />
             </button>
           </div>
