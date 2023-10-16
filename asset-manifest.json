@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/one-day-friend/static/css/main.73248383.css",
-    "main.js": "/one-day-friend/static/js/main.cde90f6c.js",
+    "main.css": "/one-day-friend/static/css/main.3c7de875.css",
+    "main.js": "/one-day-friend/static/js/main.132b8388.js",
     "static/js/787.3859387d.chunk.js": "/one-day-friend/static/js/787.3859387d.chunk.js",
     "static/media/slide3.jpg": "/one-day-friend/static/media/slide3.a802ca5abb2e29ebb9dd.jpg",
     "static/media/slide4.jpg": "/one-day-friend/static/media/slide4.f7f55e5a398c0c8e4e08.jpg",
@@ -25,12 +25,12 @@
     "static/media/location.svg": "/one-day-friend/static/media/location.b0f99b47c11f8079f1d8a3306800be95.svg",
     "static/media/caret-right.svg": "/one-day-friend/static/media/caret-right.55bf2fdc7f2aaa889432213b3cbce7c5.svg",
     "static/media/caret-left.svg": "/one-day-friend/static/media/caret-left.f0a223c01ecc5bf64a5957923124074c.svg",
-    "main.73248383.css.map": "/one-day-friend/static/css/main.73248383.css.map",
-    "main.cde90f6c.js.map": "/one-day-friend/static/js/main.cde90f6c.js.map",
+    "main.3c7de875.css.map": "/one-day-friend/static/css/main.3c7de875.css.map",
+    "main.132b8388.js.map": "/one-day-friend/static/js/main.132b8388.js.map",
     "787.3859387d.chunk.js.map": "/one-day-friend/static/js/787.3859387d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73248383.css",
-    "static/js/main.cde90f6c.js"
+    "static/css/main.3c7de875.css",
+    "static/js/main.132b8388.js"
   ]
 }
