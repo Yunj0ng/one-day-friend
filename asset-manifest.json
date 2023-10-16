@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/one-day-friend/static/css/main.73248383.css",
+    "main.js": "/one-day-friend/static/js/main.cde90f6c.js",
+    "static/js/787.3859387d.chunk.js": "/one-day-friend/static/js/787.3859387d.chunk.js",
+    "static/media/slide3.jpg": "/one-day-friend/static/media/slide3.a802ca5abb2e29ebb9dd.jpg",
+    "static/media/slide4.jpg": "/one-day-friend/static/media/slide4.f7f55e5a398c0c8e4e08.jpg",
+    "static/media/slide2.jpg": "/one-day-friend/static/media/slide2.6dd674f5a07cf38ec374.jpg",
+    "static/media/line.svg": "/one-day-friend/static/media/line.1246b6ce315a91540416c333d332c193.svg",
+    "static/media/ins.svg": "/one-day-friend/static/media/ins.830333c93518f0bd4af361226e14225d.svg",
+    "static/media/dolar.svg": "/one-day-friend/static/media/dolar.2050eea4574f41a07054fc949ff72c5a.svg",
+    "static/media/face.svg": "/one-day-friend/static/media/face.f23f908a0ac7812bc0adecfb91c82441.svg",
+    "static/media/twitter.svg": "/one-day-friend/static/media/twitter.b5c41e6e62fc385d4dd9ed827491a111.svg",
+    "static/media/show.svg": "/one-day-friend/static/media/show.afbd0d5feefc3e9d8b8c9474d2feccec.svg",
+    "static/media/bounce-heart.svg": "/one-day-friend/static/media/bounce-heart.93474480060c19d0ee8517408cef4f10.svg",
+    "static/media/home.svg": "/one-day-friend/static/media/home.b618d5f43eddd47ba6538cc7bdcf83dc.svg",
+    "static/media/faq.svg": "/one-day-friend/static/media/faq.270844a8935e52e3fb4049e1e22ed4af.svg",
+    "index.html": "/one-day-friend/index.html",
+    "static/media/cart-full.svg": "/one-day-friend/static/media/cart-full.609102c659f5b5b0838ce491134d737d.svg",
+    "static/media/cart.svg": "/one-day-friend/static/media/cart.ee3ae20dc91d08bf116d8512fb991efb.svg",
+    "static/media/star.svg": "/one-day-friend/static/media/star.c7a0702d1553901d2aeaec987b2eb247.svg",
+    "static/media/bars.svg": "/one-day-friend/static/media/bars.ad97798429213a570f10f1ca654c4003.svg",
+    "static/media/fb.svg": "/one-day-friend/static/media/fb.e1bea1f0738a9e8faf27126ef3fc19ce.svg",
+    "static/media/search.svg": "/one-day-friend/static/media/search.ae567b2021a10304d6c97fe0e67007f8.svg",
+    "static/media/location.svg": "/one-day-friend/static/media/location.b0f99b47c11f8079f1d8a3306800be95.svg",
+    "static/media/caret-right.svg": "/one-day-friend/static/media/caret-right.55bf2fdc7f2aaa889432213b3cbce7c5.svg",
+    "static/media/caret-left.svg": "/one-day-friend/static/media/caret-left.f0a223c01ecc5bf64a5957923124074c.svg",
+    "main.73248383.css.map": "/one-day-friend/static/css/main.73248383.css.map",
+    "main.cde90f6c.js.map": "/one-day-friend/static/js/main.cde90f6c.js.map",
+    "787.3859387d.chunk.js.map": "/one-day-friend/static/js/787.3859387d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73248383.css",
+    "static/js/main.cde90f6c.js"
+  ]
+}
