@@ -20,10 +20,12 @@ import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import theme from "@styles/muiStyles.jsx";
 
+const basename = process.env.PUBLIC_URL
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <LoadingContextProvider>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <SettingContextProvider>
